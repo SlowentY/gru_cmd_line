@@ -1,0 +1,90 @@
+# depslib dependency file v1.0
+1741009465 source:c:\users\admin\desktop\gru\main.cpp
+	<iostream>
+	<fstream>
+	<ctime>
+	<vector>
+	<malloc.h>
+	<algorithm>
+	<thread>
+	<chrono>
+	<sstream>
+	<string>
+	<iomanip>
+	<cstdint>
+	<bitset>
+	<windows.h>
+	"src/PassiveSocket.h"
+	<stdio.h>
+	"simplelogger.hpp"
+
+1735297598 c:\users\admin\desktop\gru\src\passivesocket.h
+	"ActiveSocket.h"
+
+1735297598 c:\users\admin\desktop\gru\src\activesocket.h
+	"SimpleSocket.h"
+
+1735345368 c:\users\admin\desktop\gru\src\simplesocket.h
+	<sys/stat.h>
+	<stdlib.h>
+	<stdio.h>
+	<stdarg.h>
+	<errno.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<netinet/tcp.h>
+	<netinet/ip.h>
+	<netdb.h>
+	<linux/if_packet.h>
+	<linux/if_ether.h>
+	<linux/if.h>
+	<sys/sendfile.h>
+	<net/if.h>
+	<sys/time.h>
+	<sys/uio.h>
+	<unistd.h>
+	<fcntl.h>
+	<io.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	"Host.h"
+	"StatTimer.h"
+
+1735297598 c:\users\admin\desktop\gru\src\host.h
+	<limits.h>
+
+1735297598 c:\users\admin\desktop\gru\src\stattimer.h
+	<string.h>
+	<Winsock2.h>
+	<time.h>
+	<stdio.h>
+	<sys/time.h>
+	"Host.h"
+
+1736707942 c:\users\admin\desktop\gru\simplelogger.hpp
+	<iostream>
+	<iomanip>
+	<chrono>
+	<ctime>
+	<sstream>
+	<fstream>
+	<sstream>
+	<fstream>
+	<windows.h>
+	<winbase.h>
+	<sys/stat.h>
+	<unistd.h>
+
+1736725608 source:c:\users\admin\desktop\gru\simplelogger.cpp
+	"simplelogger.hpp"
+
+1735297598 source:c:\users\admin\desktop\gru\src\activesocket.cpp
+	"ActiveSocket.h"
+
+1735297598 source:c:\users\admin\desktop\gru\src\passivesocket.cpp
+	"PassiveSocket.h"
+
+1735297598 source:c:\users\admin\desktop\gru\src\simplesocket.cpp
+	"SimpleSocket.h"
+

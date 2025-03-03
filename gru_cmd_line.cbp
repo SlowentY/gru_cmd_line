@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="gru_cmd_line" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/gru_cmd_line" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectCompilerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-std=gnu++17" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-lws2_32" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="main.cpp" />
+		<Unit filename="simplelogger.cpp" />
+		<Unit filename="simplelogger.hpp" />
+		<Unit filename="src/ActiveSocket.cpp" />
+		<Unit filename="src/ActiveSocket.h" />
+		<Unit filename="src/Host.h" />
+		<Unit filename="src/PassiveSocket.cpp" />
+		<Unit filename="src/PassiveSocket.h" />
+		<Unit filename="src/SimpleSocket.cpp" />
+		<Unit filename="src/SimpleSocket.h" />
+		<Unit filename="src/StatTimer.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
