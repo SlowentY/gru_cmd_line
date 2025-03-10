@@ -1,0 +1,13 @@
+[2025-03-10 12:42:50:323] / [INFO]	Sync delay: 450 msec
+[2025-03-10 12:43:01:784] / [INFO]	starting
+[2025-03-10 12:43:01:784] / [INFO]	SocketActive.Initialize = 1
+[2025-03-10 12:43:01:794] / [INFO]	 SocketActive.Initialize :  = No such CSimpleSocket error
+[2025-03-10 12:43:01:794] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 12:43:01:794] / [INFO]	SocketActive.Open = 1
+[2025-03-10 12:43:01:794] / [INFO]	 SocketActive.Open :  = No such CSimpleSocket error
+[2025-03-10 12:43:01:794] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 12:43:04:445] / [INFO]	Command: q
+[2025-03-10 12:43:04:445] / [INFO]	SocketActive.Close() = 0
+[2025-03-10 12:43:04:445] / [INFO]	 SocketActive.Close :  = No socket error.
+[2025-03-10 12:43:04:445] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 12:43:04:445] / [INFO]	closed

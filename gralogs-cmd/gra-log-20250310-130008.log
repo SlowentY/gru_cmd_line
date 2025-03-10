@@ -1,0 +1,17 @@
+[2025-03-10 13:00:08:17] / [INFO]	Sync delay: 450 msec
+[2025-03-10 13:00:14:695] / [INFO]	starting
+[2025-03-10 13:00:14:695] / [INFO]	SocketActive.Initialize = 1
+[2025-03-10 13:00:14:695] / [INFO]	 SocketActive.Initialize :  = No such CSimpleSocket error
+[2025-03-10 13:00:14:695] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 13:00:14:695] / [INFO]	SocketActive.Open = 1
+[2025-03-10 13:00:14:705] / [INFO]	 SocketActive.Open :  = No such CSimpleSocket error
+[2025-03-10 13:00:14:705] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 13:00:15:881] / [INFO]	Command: a
+[2025-03-10 13:00:15:881] / [INFO]	GET API VERSION[2025-03-10 13:00:15:881] / [INFO]	SocketActive.Send = 4
+[2025-03-10 13:00:15:881] / [INFO]	 SocketActive.Send :  = No such CSimpleSocket error
+[2025-03-10 13:00:15:881] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 13:00:15:881] / [INFO]	listening...
+[2025-03-10 13:00:15:881] / [INFO]	SocketActive.Receive = a
+[2025-03-10 13:00:15:881] / [INFO]	 SocketActive.Receive :  = No socket error.
+[2025-03-10 13:00:15:881] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 13:00:15:881] / [INFO]	

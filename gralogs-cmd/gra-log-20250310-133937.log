@@ -1,0 +1,67 @@
+[2025-03-10 13:39:37:294] / [INFO]	Sync delay: 450 msec
+[2025-03-10 13:39:44:481] / [INFO]	starting
+[2025-03-10 13:39:44:481] / [INFO]	SocketActive.Initialize = 1
+[2025-03-10 13:39:44:481] / [INFO]	 SocketActive.Initialize :  = No socket error.
+[2025-03-10 13:39:44:481] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 13:39:44:481] / [INFO]	SocketActive.Open = 1
+[2025-03-10 13:39:44:487] / [INFO]	 SocketActive.Open :  = No socket error.
+[2025-03-10 13:39:44:487] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 13:39:48:618] / [INFO]	Command: u 1.txt
+[2025-03-10 13:39:48:628] / [INFO]	UPLOADING TRAJECTORY[2025-03-10 13:39:48:628] / [INFO]	SocketActive.Send = 12
+[2025-03-10 13:39:48:628] / [INFO]	 SocketActive.Send :  = No socket error.
+[2025-03-10 13:39:48:628] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 13:39:48:628] / [INFO]	SocketActive.Send = 1208
+[2025-03-10 13:39:48:628] / [INFO]	 SocketActive.Send :  = No such CSimpleSocket error
+[2025-03-10 13:39:48:628] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 13:39:48:628] / [INFO]	listening...2570[2025-03-10 13:39:48:628] / [INFO]	SocketActive.Receive = 1c
+[2025-03-10 13:39:48:638] / [INFO]	 SocketActive.Receive :  = No such CSimpleSocket error
+[2025-03-10 13:39:48:638] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 13:39:48:638] / [INFO]	Uploaded: 1
+[2025-03-10 13:39:48:638] / [INFO]	SocketActive.Send = 4b8
+[2025-03-10 13:39:48:638] / [INFO]	 SocketActive.Send :  = No such CSimpleSocket error
+[2025-03-10 13:39:48:638] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 13:39:48:638] / [INFO]	listening...a0a[2025-03-10 13:39:48:638] / [INFO]	SocketActive.Receive = 20
+[2025-03-10 13:39:48:713] / [INFO]	 SocketActive.Receive :  = No such CSimpleSocket error
+[2025-03-10 13:39:48:713] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 13:39:48:713] / [INFO]	Uploaded: 2
+[2025-03-10 13:39:48:713] / [INFO]	SocketActive.Send = 4b8
+[2025-03-10 13:39:48:713] / [INFO]	 SocketActive.Send :  = No such CSimpleSocket error
+[2025-03-10 13:39:48:713] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 13:39:48:713] / [INFO]	listening...a0a[2025-03-10 13:39:48:713] / [INFO]	SocketActive.Receive = 24
+[2025-03-10 13:39:48:775] / [INFO]	 SocketActive.Receive :  = No such CSimpleSocket error
+[2025-03-10 13:39:48:775] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 13:39:48:775] / [INFO]	Uploaded: 3
+[2025-03-10 13:39:48:775] / [INFO]	SocketActive.Send = 4b8
+[2025-03-10 13:39:48:775] / [INFO]	 SocketActive.Send :  = No such CSimpleSocket error
+[2025-03-10 13:39:48:775] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 13:39:48:775] / [INFO]	listening...a0a[2025-03-10 13:39:48:775] / [INFO]	SocketActive.Receive = 28
+[2025-03-10 13:39:48:845] / [INFO]	 SocketActive.Receive :  = No such CSimpleSocket error
+[2025-03-10 13:39:48:845] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 13:39:48:845] / [INFO]	Uploaded: 4
+[2025-03-10 13:39:48:845] / [INFO]	SocketActive.Send = 4b8
+[2025-03-10 13:39:48:845] / [INFO]	 SocketActive.Send :  = No such CSimpleSocket error
+[2025-03-10 13:39:48:845] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 13:39:48:845] / [INFO]	listening...a0a[2025-03-10 13:39:48:845] / [INFO]	SocketActive.Receive = 2c
+[2025-03-10 13:39:48:910] / [INFO]	 SocketActive.Receive :  = No such CSimpleSocket error
+[2025-03-10 13:39:48:910] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 13:39:48:910] / [INFO]	Uploaded: 5
+[2025-03-10 13:39:48:910] / [INFO]	SocketActive.Send = 4b8
+[2025-03-10 13:39:48:910] / [INFO]	 SocketActive.Send :  = No such CSimpleSocket error
+[2025-03-10 13:39:48:910] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 13:39:48:910] / [INFO]	listening...a0a[2025-03-10 13:39:48:910] / [INFO]	SocketActive.Receive = 30
+[2025-03-10 13:39:48:981] / [INFO]	 SocketActive.Receive :  = No such CSimpleSocket error
+[2025-03-10 13:39:48:981] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 13:39:48:981] / [INFO]	Uploaded: 6
+[2025-03-10 13:39:48:981] / [INFO]	SocketActive.Send = 74
+[2025-03-10 13:39:48:981] / [INFO]	 SocketActive.Send :  = No such CSimpleSocket error
+[2025-03-10 13:39:48:981] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 13:39:48:981] / [INFO]	listening...a0a[2025-03-10 13:39:48:981] / [INFO]	SocketActive.Receive = 34
+[2025-03-10 13:39:48:981] / [INFO]	 SocketActive.Receive :  = No such CSimpleSocket error
+[2025-03-10 13:39:48:981] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 13:39:48:981] / [INFO]	Uploaded: 7
+[2025-03-10 13:39:56:237] / [INFO]	Command: d dgd
+[2025-03-10 13:41:49:277] / [INFO]	Command: q
+[2025-03-10 13:41:49:277] / [INFO]	SocketActive.Close() = 0
+[2025-03-10 13:41:49:277] / [INFO]	 SocketActive.Close :  = No socket error.
+[2025-03-10 13:41:49:277] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 13:41:49:277] / [INFO]	closed

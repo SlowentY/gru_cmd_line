@@ -69,17 +69,25 @@ int decode_get_api_version(uint8_t *buf, size_t bytes_recieved) {
     }
 
     // Check if buffer has enough data for version numbers
-    if(bytes_recieved < 12)
+    if(bytes_recieved < 10)
     {
-        cout << "Wrong data size!" << endl;
+        cout << "Wrong data size: " << bytes_recieved << endl;
+
+        for(int i = 0; i < bytes_recieved; i++)
+        {
+            printf("0x%02X\n", (unsigned int)(buf[i]));
+        }
+
+        cout << endl;
+
         return -1;
     }
 
     // Extract version numbers from buffer
     uint16_t major_version, minor_version, patch_version;
-    memcpy(&major_version, buf + 6, sizeof(uint16_t));
-    memcpy(&minor_version, buf + 8, sizeof(uint16_t));
-    memcpy(&patch_version, buf + 10, sizeof(uint16_t));
+    memcpy(&major_version, buf + 4, sizeof(uint16_t));
+    memcpy(&minor_version, buf + 6, sizeof(uint16_t));
+    memcpy(&patch_version, buf + 8, sizeof(uint16_t));
 
     // Print version
     cout << "API Version: " << major_version << "." << minor_version << "." << patch_version << endl;
@@ -161,7 +169,7 @@ int decode_get_gru_state(uint8_t *buf, size_t bytes_recieved) {
 
     // Check if buffer has enough data
     if(bytes_recieved < 6) {
-        cout << "Wrong state data size!" << endl;
+        cout << "Wrong state data size: " << bytes_recieved << endl;
         return -1;
     }
 
@@ -215,7 +223,7 @@ int decode_get_gru_state(uint8_t *buf, size_t bytes_recieved) {
     if(bytes_recieved > 6) {
         // Check if buffer has enough data for error information
         if(bytes_recieved < 34) {
-            cout << "Wrong error data size!" << endl;
+            cout << "Wrong error data size: " <<  bytes_recieved << endl;
             return -1;
         }
         // Extract error data from buffer
@@ -294,7 +302,7 @@ int decode_get_sw_revision(uint8_t *buf, size_t bytes_recieved) {
 
     // Check if buffer has enough data and is even-sized
     if(bytes_recieved < 6 || bytes_recieved % 2 != 0) {
-        cout << "Wrong data size!" << endl;
+        cout << "Wrong data size: " << bytes_recieved << endl;
         return -1;
     }
 
@@ -532,7 +540,7 @@ void socket_close(CActiveSocket SocketActive){ // This function closes socket
 
 vector<vector<int32_t>> get_nodes(const string& Traject_file_name) {
     vector<vector<int32_t>> nodes;
-     ifstream myfile(Traject_file_name);
+    ifstream myfile(Traject_file_name);
     if (!myfile.is_open()) { // check if file is open
         *(newlogger) << LogPref::Flag(ERROR) << "Unable to open file\n";
     }
@@ -850,19 +858,30 @@ int main(int argc, char** argv)
     cout << "s - get_gru_state \n";
     cout << "1 - turn_ps_on \n";
     cout << "0 - turn_ps_off \n";
-    cout << "d - download_traject \n";
-    cout << "u - upload_traj \n";
+    cout << "d <points> - download_traject \n";
+    cout << "u <file_name> - upload_traj \n";
     cout << "q - socket_close and exit \n \n";
 
     bool exit = false;
+    Traject_file_name = "";
+
     while(!exit) {
-        char cmd;
+        string cmd;
         cout << "Enter command: ";
-        cmd = getchar();
+
+        delay(100);
+
+        getline(cin, cmd, '\n');
 
         *(newlogger) << "Command: " << cmd << endl;
 
-        switch(cmd)
+        stringstream ss(cmd);
+        string arg;
+
+        getline(ss, arg, ' ');
+        getline(ss, arg, ' ');
+
+        switch(cmd[0])
         {
             case 'a':
                 request::get_API_version(SocketActive);
@@ -880,15 +899,29 @@ int main(int argc, char** argv)
                 request::turn_ps_off(SocketActive);
                 break;
             case 'd':
-                cout << "Enter number of points: ";
-                cin >> points_cnt;
-                request::download_traject(SocketActive, points_cnt);
+            {
+                cout << "Downloading traject..." << endl;
+                int points;
+
+                try
+                {
+                    points = stoi(arg);
+                }
+                catch(invalid_argument e)
+                {
+                    cout << "Exception: " << e.what() << endl;
+                    break;
+                }
+
+                request::download_traject(SocketActive, points);
                 break;
+            }
             case 'u':
-                cout << "Enter file name: ";
-                getline(cin, Traject_file_name);
-                request::upload_traj(SocketActive, request::get_nodes(Traject_file_name));
+            {
+                cout << "Uploading trajectory..." << endl;
+                request::upload_traj(SocketActive, request::get_nodes(arg));
                 break;
+            }
             case 'q':
                 request::socket_close(SocketActive);
                 exit = true;

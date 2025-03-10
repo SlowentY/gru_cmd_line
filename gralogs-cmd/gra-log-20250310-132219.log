@@ -1,0 +1,9 @@
+[2025-03-10 13:22:19:715] / [INFO]	Sync delay: 450 msec
+[2025-03-10 13:22:30:7] / [INFO]	starting
+[2025-03-10 13:22:30:7] / [INFO]	SocketActive.Initialize = 1
+[2025-03-10 13:22:30:7] / [INFO]	 SocketActive.Initialize :  = No such CSimpleSocket error
+[2025-03-10 13:22:30:7] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 13:22:30:7] / [INFO]	SocketActive.Open = 1
+[2025-03-10 13:22:30:7] / [INFO]	 SocketActive.Open :  = No such CSimpleSocket error
+[2025-03-10 13:22:30:7] / [INFO]	 IsSocketValid() = 1
+[2025-03-10 13:22:38:121] / [INFO]	Command: u
